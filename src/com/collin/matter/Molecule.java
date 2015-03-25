@@ -11,6 +11,7 @@ public enum Molecule{
             Element.HYDROGEN,Element.HYDROGEN,Element.HYDROGEN,Element.OXYGEN,Element.OXYGEN,Element.OXYGEN,
             Element.OXYGEN,Element.OXYGEN,Element.OXYGEN);
 
+
     public final Element[] elements;
     public final String chemName;
     public final String comName;
@@ -31,7 +32,7 @@ public enum Molecule{
     }
 
     //Get the Chemical Formula
-    public String chemForm(){
+    public String  chemForm(){
         return name();
     }
 }
