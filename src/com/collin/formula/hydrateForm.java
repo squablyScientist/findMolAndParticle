@@ -1,6 +1,5 @@
 package com.collin.formula;
 
-import com.collin.matter.Element;
 import com.collin.matter.*;
 
 
@@ -18,7 +17,6 @@ public class hydrateForm {
                 //find the moles in the water
                 waterMol = mpgForm.gToMoles(waterG,Molecule.H2O.mass());
 
-
         //calculate the ratio
         double ratio = Math.floor(waterMol / anhydrideMol);
         return(anhydride.name() + " * " + ratio + "H2O");
@@ -33,7 +31,6 @@ public class hydrateForm {
                 //find the moles in the water
                 waterMol = mpgForm.gToMoles(waterG,Molecule.H2O.mass());
 
-
         //calculate the ratio
         double ratio = Math.floor(waterMol / anhydrideMol);
         return(anhydride.name() + " * " + ratio + "H2O");
@@ -47,7 +44,6 @@ public class hydrateForm {
 
                 //find the moles in the water
                 waterMol = mpgForm.gToMoles(waterG,Molecule.H2O.mass());
-
 
         //calculate the ratio
         double ratio = Math.floor(waterMol / anhydrideMol);
