@@ -1,32 +1,40 @@
 package com.collin.matter;
 public enum Element{
 
-    //TODO Add the rest of the main, possible another parameter?
-    BLANK(0,null,'n'),
-    HYDROGEN(1.008,"H",'G'),HELIUM(4.003,"He",'G'),LITHIUM(6.941,"Li",'S'),BERYLLIUM(9.012,"Be",'S'),
-    BORON(10.81,"B",'S'),CARBON(12.011,"C",'S'),NITROGEN(14.007,"N",'G'),OXYGEN(15.999,"O",'G'),
-    FLUORINE(18.999,"F",'G'),NEON(20.179,"Ne",'G'),SODIUM(22.99,"Na",'S'),MAGNESIUM(24.305,"Mg",'S'),
-    ALUMINUM(26.982,"Al",'S'),SILICON(28.086,"Si",'S'),PHOSPHOROUS(30.974,"P",'S'),SULFUR(32.06,"S",'S'),
-    CHLORINE(35.453,"Cl",'G'),ARGON(39.948,"Ar",'G'),POTASSIUM(39.098,"K",'S'),CALCIUM(40.08,"Ca",'S'),
-    SCAMDIUM(44.956,"Sc",'S'),TITANIUM(47.88,"Ti",'S'),VANADIUM(50.942,"V",'S'),CHROMIUM(51.996,"Cr",'S'),
-    MANGANESE(54.938,"Mn",'S'),IRON(55.847,"Fe",'S'),COBALT(58.933,"Co",'S'),NICKEL(58.693,"Ni",'S'),
-    COPPER(63.546,"Cu",'S'),ZINC(65.39,"Zn",'S'),GALLIUM(69.72,"Ga",'S'),GERMANIUM(72.61,"Ge",'S'),
-    ARSENIC(74.922,"As",'S'),SELENIUM(78.96,"Se",'S'),BROMINE(79.904,"Br",'L'),KRYPTON(83.8,"Kr",'G'),
-    RUBIDIUM(85.468,"Rb",'S'),STRONTIUM(87.62,"Sr",'S'),YTTRIUM(88.906,"Y",'S'),ZIRCONIUM(91.224,"Zr",'S'),
-    NIOBIUM(92.906,"Nb",'S'),MOLYBDENUM(95.94,"Mo",'S'),TECHNETIUM(97.907,"Tc",'S'),RUTHENIUM(101.07,"Ru",'S'),
-    RHODIUM(102.906,"Rh",'S'),PALLADIUM(106.42,"Pd",'S'),SILVER(107.868,"Ag",'S'),CADMIUM(112.411,"Cd",'S'),
-    INDIUM(114.82,"In",'S'),TIN(118.710,"Sn",'S'),ANTIMONY(121.757,"Sb",'S');
+    //TODO Add parameter for melting / boiling point, as well as one for phase at room temp.
+    BLANK(0,null),
+    HYDROGEN(1.008,"H"),HELIUM(4.003,"He"),LITHIUM(6.941,"Li"),BERYLLIUM(9.012,"Be"),BORON(10.81,"B"),
+    CARBON(12.011,"C"),NITROGEN(14.007,"N"),OXYGEN(15.999,"O"),FLUORINE(18.999,"F"),NEON(20.179,"Ne"),
+    SODIUM(22.99,"Na"),MAGNESIUM(24.305,"Mg"),ALUMINUM(26.982,"Al"),SILICON(28.086,"Si"),PHOSPHOROUS(30.974,"P"),
+    SULFUR(32.06,"S"),CHLORINE(35.453,"Cl"),ARGON(39.948,"Ar"),POTASSIUM(39.098,"K"),CALCIUM(40.08,"Ca"),
+    SCAMDIUM(44.956,"Sc"),TITANIUM(47.88,"Ti"),VANADIUM(50.942,"V"),CHROMIUM(51.996,"Cr"),MANGANESE(54.938,"Mn"),
+    IRON(55.847,"Fe"),COBALT(58.933,"Co"),NICKEL(58.693,"Ni"),COPPER(63.546,"Cu"),ZINC(65.39,"Zn"),GALLIUM(69.72,"Ga"),
+    GERMANIUM(72.61,"Ge"),ARSENIC(74.922,"As"),SELENIUM(78.96,"Se"),BROMINE(79.904,"Br"),KRYPTON(83.8,"Kr"),
+    RUBIDIUM(85.468,"Rb"),STRONTIUM(87.62,"Sr"),YTTRIUM(88.906,"Y"),ZIRCONIUM(91.224,"Zr"),NIOBIUM(92.906,"Nb"),
+    MOLYBDENUM(95.94,"Mo"),TECHNETIUM(97.907,"Tc"),RUTHENIUM(101.07,"Ru"),RHODIUM(102.906,"Rh"),PALLADIUM(106.42,"Pd"),
+    SILVER(107.868,"Ag"),CADMIUM(112.411,"Cd"),INDIUM(114.82,"In"),TIN(118.710,"Sn"),ANTIMONY(121.757,"Sb"),
+    TELLURIUM(127.60,"Te"),IODINE(126.905,"I"),XENON(131.29,"Xe"),CESIUM(132.905,"Cs"),BARIUM(137.327,"Ba"),
+    LANTHANUM(138.905,"La"),CERIUM(140.12,"Ce"),PRAESEODYNIUM(140.908,"Pr"),NEODYNIUM(144.908,"Nd"),
+    PROMETHIUM(144.913,"Pm"),SAMARIUM(150.36,"Sm"),EUROPIUM(151.96,"Eu"),GADOLINIUM(157.25,"Gd"),TERBIUM(158.925,"Tb"),
+    DYSPROSIUM(162.5,"Dy"),HOLMIUM(164.930,"Ho"),ERBIUM(167.26,"Er"),THULIUM(168.934,"Tm"),YTTERBIUM(173.04,"Yb"),
+    LUTETIUM(174.967,"Lu"),HAFNIUM(178.49,"Hf"),TANTALUM(180.948,"Ta"),TUNGSTEN(183.85,"W"),RHENIUM(186.207,"Re"),
+    OSMIUM(190.2,"Os"),IRIDIUM(192.22,"Ir"),PLATINUM(195.08,"Pt"),GOLD(196.967,"Au"),MERCURY(200.59,"Hg"),
+    THALLIUM(204.383,"Tl"),LEAD(207.2,"Pb"),BISMUTH(208.98,"Bi"),POLONIUM(208.982,"Po"),ASTATINE(209.987,"At"),
+    RADON(222.018,"Rn"),FRANCIUM(223.02,"Fr"),RADIUM(226.025,"Ra"),ACTINIUM(227.028,"Ac"),THORIUM(232.038,"Th"),
+    PROCTACTINIUM(231.036,"Pa"),URANIUM(238.029,"U"),NEPTUNIUM(237.048,"Np"),PLUTONIUM(244.064,"Pu"),
+    AMERCIUM(243.061,"Am"),CURIUM(247.07,"Cm"),BERKELIUM(247.07,"Bk"),CALIFORNIUM(251.08,"Cf"),
+    EINSTEINIUM(252.083,"Es"),FERMIUM(257.095,"Fm"),MENDELEVIUM(258.099,"Md"),NOBELIUM(259.101,"No"),
+    LAWRENCIUM(262,"Lr"),RUTHERFORDIUM(261,"Rf"),DUBNIUM(262,"Db"),SEABORGIUM(263,"Sg"),BOHRIUM(262,"Bh"),
+    HASSIUM(265,"Hs"),MEITNURIUM(266,"Mt");
 
     public final double mass;
     public final String symbol;
     public final int atomicNumber;
-    public final char phase;
 
     //constructor
-    Element(double mass, String symbol, char phase) {
+    Element(double mass, String symbol) {
         this.mass = mass;
         this.symbol = symbol;
         this.atomicNumber = ordinal();
-        this.phase = phase;
     }
 }

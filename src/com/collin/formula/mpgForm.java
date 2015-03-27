@@ -5,14 +5,12 @@ public class mpgForm {
 
     //Convert Grams to Moles
     public static double gToMoles(double grams, double molMass){
-
         double mol = grams / molMass;
         return mol;
     }
 
     //Convert Moles to Particles
     public static double molToPart(double mol){
-
         double part = mol * AVANUM;
         return part;
     }
@@ -27,7 +25,6 @@ public class mpgForm {
     //Convert from Moles to Grams
     public static double molToGrams(double mol, double molMass){
        double grams = mol * molMass;
-
         return grams;
     }
 
